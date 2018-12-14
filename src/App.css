@@ -1,0 +1,185 @@
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.owner-name {
+  font-family: 'Lobster Two', cursive;
+  color: #455A64;
+}
+
+.todo-ip input::-webkit-input-placeholder {
+  font-family: 'Nunito', sans-serif;
+}
+
+.todo-ip input:-ms-input-placeholder {
+  font-family: 'Nunito', sans-serif;
+}
+
+.todo-ip input:-moz-placeholder {
+  font-family: 'Nunito', sans-serif;
+}
+
+.todo-ip input::-moz-placeholder {
+  font-family: 'Nunito', sans-serif;
+}
+
+.todo-container {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background: #ECEFF1;
+}
+
+.todo-inner-cont {
+  display: inline-block;
+  justify-content: center;
+  /* background: #e7eef1; */
+  background: #B0BEC5;
+  width: 44%;
+  margin: 100px auto;
+  min-height: 500px;
+  box-shadow: 10px 10px #455A64;
+  padding: 45px 0px;
+  border: 1px solid #d8d8d8;
+}
+
+.todo-title h1 {
+  color: #37474F;
+}
+
+.todo-ip button {
+  background: #455a64;
+  border: none;
+  padding: 14px 25px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 1.2em;
+}
+
+.todo-ip {
+  margin: 33px 0px;
+}
+
+.todo-ip input {
+  padding: 15px;
+  border: 1px solid #CFD8DC;
+  margin-right: 10px;
+  outline: none;
+  width: 250px;
+  color: #455A64;
+  font-size: 1.2em;
+}
+
+.todo-list {
+  display: inline-block;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.todo-list.no-data {
+  background: #E57373;
+  color: #fff;
+  border-radius: 4px;
+  min-height: 115px;
+  line-height: 82px;
+}
+
+.todo-list ul {
+  padding-left: 0px;
+}
+
+.todo-list ul li {
+  background: #fff;
+  list-style-type: none;
+  margin-bottom: 14px;
+  padding: 16px;
+  position: relative;
+  text-align: left;
+  box-shadow: 5px 6px #455A64;
+}
+
+.todo-list ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.todo-data {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 450px;
+  display: inline-block;
+  overflow-y: auto;
+  color: #455A64;
+  font-size: 1.5em;
+}
+
+.ll-todo.addanim.cmptld-list {
+  background: #C8E6C9;
+  box-shadow: 5px 6px #1B5E20;
+}
+
+.td-icon.cmplt-todo i {
+  color: #4CAF50;
+}
+
+.ll-todo.addanim.cmptld-list .todo-data {
+  text-decoration: line-through;
+}
+
+.cmplt-todo {
+  opacity: 0;
+}
+
+.todo-list ul li:hover .cmplt-todo {
+  opacity: 1;
+}
+
+.del-todo {
+  right: 22px;
+}
+
+.cmplt-todo {
+  right: 42px;
+}
+
+.td-icon {
+  position: absolute;
+  cursor: pointer;
+}
+
+.del-todo i {
+  color: #ff8080;
+}
+
+.del-todo i:hover .todo-list ul li {
+  background: #ff8080;
+}
+
+.addanim {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
